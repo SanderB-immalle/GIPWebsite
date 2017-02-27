@@ -22,9 +22,10 @@ body{
           justify-content: center;
 }
 .mdl-card {
-  width: 10vw;
+  width: 400px;;
 }
-.card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+.card-square
+.mdl-card {
+  width: 500px;
+  height: 500px;
 }
