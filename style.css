@@ -1,0 +1,30 @@
+body{
+    background-color: #D8D8D8;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+.portfolio-header {
+  position: relative;
+  background-color: #D8D8D8;
+  background-image: url(images/header-bg.jpg);
+}
+
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mdl-card {
+  width: 10vw;
+}
+.card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
