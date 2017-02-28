@@ -84,9 +84,42 @@
                     Mijn vorige website. Die was niet zoals ik gehoopt had.
                 </div>
                 <div class="mdl-cell mdl-cell--12-col" style="text-align:center;">
-                    <a href="docs/zelfevaluatie.pdf"><h4>Vollegdige Zelfevaluatie</h4></a>
+                    <a href="docs/zelfevaluatie.pdf"><h4>Volledige Zelfevaluatie</h4></a>
                 </div>
                 
+
+
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+            Lua 57% &emsp;
+                <div id="p1" class="mdl-progress mdl-js-progress"></div>         
+            </div>
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+            C# 56% &emsp;
+                <div id="p2" class="mdl-progress mdl-js-progress"></div>     
+            </div>
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+            JavaScript 43% &emsp;
+                <div id="p3" class="mdl-progress mdl-js-progress"></div>           
+            </div>
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+                HTML & CSS 38% &emsp;
+                <div id="p4" class="mdl-progress mdl-js-progress"></div>     
+            </div>
+
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+                Windows 10 83% &emsp;
+                <div id="p5" class="mdl-progress mdl-js-progress"></div>     
+            </div>
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+                Windows 8 78% &emsp;
+                <div id="p6" class="mdl-progress mdl-js-progress"></div>     
+            </div>
+
+            <div class="charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-grid">
+                Windows 7 72% &emsp;
+                <div id="p7" class="mdl-progress mdl-js-progress"></div>     
+            </div>
+
             </div>        
 
             <footer class="mdl-mini-footer">
@@ -102,7 +135,36 @@
             </footer>
         </main>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+
+        document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(57);
+        });
+
+        document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(56);
+        });
+
+        document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(43);
+        });
+        
+        document.querySelector('#p4').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(38);
+        });
+
+        document.querySelector('#p5').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(83);
+        });
+        document.querySelector('#p6').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(78);
+        });
+        document.querySelector('#p7').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(72);
+        });
+    </script>   
+    <script src="https://code.getmdl.io/1.3.0/material.min.js">
+    </script>
 </body>
 
 </html>

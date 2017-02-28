@@ -21,11 +21,6 @@ body{
       -ms-flex-pack: center;
           justify-content: center;
 }
-.mdl-card {
-  width: 400px;;
-}
+
 .card-square
-.mdl-card {
-  width: 500px;
-  height: 500px;
-}
+
